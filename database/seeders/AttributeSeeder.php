@@ -2,19 +2,19 @@
 
 namespace Database\Seeders;
 
-use App\Models\Category;
+use App\Models\Attribute;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class CategorySeeder extends Seeder
+class AttributeSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Category::create(['name' => 'Chair']);
-        Category::create(['name' => 'Sofa']);
-        Category::create(['name' => 'Desk']);
+        Attribute::create([ 'name' => 'color' ]);
+        Attribute::create([ 'name' => 'material' ]);
+        Attribute::create([ 'name' => 'size' ]);
     }
 }
